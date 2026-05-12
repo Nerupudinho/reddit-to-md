@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit to MD",
+  "version": "1.0",
+  "description": "Download any Reddit post and all its comments as a Markdown (.md) file",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.reddit.com/r/*/comments/*/*",
+        "https://www.reddit.com/r/*/comments/*/*/*",
+        "https://old.reddit.com/r/*/comments/*/*",
+        "https://old.reddit.com/r/*/comments/*/*/*",
+        "https://sh.reddit.com/r/*/comments/*/*",
+        "https://sh.reddit.com/r/*/comments/*/*/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}

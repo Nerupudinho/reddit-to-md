@@ -1,0 +1,25 @@
+#reddit-md-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99999;
+  padding: 9px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #FF4500;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+  transition: background 0.15s, transform 0.1s, opacity 0.15s;
+  white-space: nowrap;
+}
+#reddit-md-btn:hover:not(:disabled) { background: #d93a00; }
+#reddit-md-btn:active:not(:disabled) { transform: scale(0.97); }
+#reddit-md-btn:disabled {
+  background: #ff7a50;
+  cursor: not-allowed;
+  opacity: 0.85;
+}
