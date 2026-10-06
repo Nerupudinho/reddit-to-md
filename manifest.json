@@ -3,6 +3,11 @@
   "name": "Reddit to MD",
   "version": "1.0",
   "description": "Download any Reddit post and all its comments as a Markdown (.md) file",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "content_scripts": [
     {
       "matches": [
@@ -16,6 +21,5 @@
       "js": ["content.js"],
       "css": ["styles.css"]
     }
-  ],
-  "permissions": ["activeTab"]
+  ]
 }
